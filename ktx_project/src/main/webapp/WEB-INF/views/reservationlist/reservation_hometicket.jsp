@@ -33,7 +33,7 @@
 						<span class="txt_sml fl">출발일시</span>
 					</li>
 					<li>
-						<span class="txt_large15 fl">${ovo.sdate} ${ovo.stime}</span>
+						<span class="txt_large15 fl">${ovo.depPlandTime} ${ovo.stime}</span>
 					</li>
 				</ul>
 			</div>

@@ -13,7 +13,7 @@ public class OrderDao extends DBConn{
 		
 		ArrayList<OrderVo> orderList = new ArrayList<OrderVo>();
 		
-		String sql = "SELECT sstation, sdate, stime, runtime, dstation, price, reservnum, trainnum, charnum, cancel FROM KTX_ORDER where mid='HONG1234'";
+		String sql = "SELECT sstation, depPlandTime, stime, runtime, dstation, price, reservnum, trainnum, charnum, cancel FROM KTX_ORDER where mid='HONG1234'";
 		
 		getPreparedStatement(sql);
 		
@@ -26,7 +26,7 @@ public class OrderDao extends DBConn{
 				OrderVo orderVo = new OrderVo();
 				
 				 orderVo.setSstation(rs.getString(1)); 
-				 orderVo.setSdate(rs.getString(2));
+				 orderVo.setDepPlandTime(rs.getString(2));
 				 orderVo.setStime(rs.getString(3));
 				 orderVo.setRuntime(rs.getString(4));
 				 orderVo.setDstation(rs.getString(5));
@@ -77,7 +77,7 @@ public class OrderDao extends DBConn{
 		
 		OrderVo orderVo = new OrderVo();
 		
-		String sql = "SELECT sstation, sdate, stime, runtime, dstation, price, reservnum, trainnum, charnum, cancel FROM KTX_ORDER where reservnum=? ";
+		String sql = "SELECT sstation, depPlandTime, stime, runtime, dstation, price, reservnum, trainnum, charnum, cancel FROM KTX_ORDER where reservnum=? ";
 		
 		getPreparedStatement(sql);
 		
@@ -88,7 +88,7 @@ public class OrderDao extends DBConn{
 			while(rs.next()) {
 				
 				 orderVo.setSstation(rs.getString(1)); 
-				 orderVo.setSdate(rs.getString(2));
+				 orderVo.setDepPlandTime(rs.getString(2));
 				 orderVo.setStime(rs.getString(3));
 				 orderVo.setRuntime(rs.getString(4));
 				 orderVo.setDstation(rs.getString(5));
@@ -115,7 +115,7 @@ public class OrderDao extends DBConn{
 		
 		ArrayList<OrderVo> orderList = new ArrayList<OrderVo>();
 		
-		String sql = "SELECT sstation, sdate, stime, runtime, dstation, price, reservnum, trainnum, charnum, mid, cancel FROM KTX_ORDER";
+		String sql = "SELECT sstation, depPlandTime, stime, runtime, dstation, price, reservnum, trainnum, charnum, mid, cancel FROM KTX_ORDER";
 		
 		getPreparedStatement(sql);
 		
@@ -128,7 +128,7 @@ public class OrderDao extends DBConn{
 				OrderVo orderVo = new OrderVo();
 				
 				 orderVo.setSstation(rs.getString(1)); 
-				 orderVo.setSdate(rs.getString(2));
+				 orderVo.setDepPlandTime(rs.getString(2));
 				 orderVo.setStime(rs.getString(3));
 				 orderVo.setRuntime(rs.getString(4));
 				 orderVo.setDstation(rs.getString(5));

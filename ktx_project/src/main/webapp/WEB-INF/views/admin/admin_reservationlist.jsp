@@ -53,7 +53,7 @@
 			        <tr class="admin_reserv" id="${ovo.reservnum}">
 			          <td>${ovo.sstation}</td>
 			          <td>${ovo.dstation}</td>
-			          <td>${ovo.sdate}</td>
+			          <td>${ovo.depPlandTime}</td>
 			          <td>${ovo.stime}</td>
 			          <td>${ovo.runtime}</td>
 			          <td>${ovo.price}</td>

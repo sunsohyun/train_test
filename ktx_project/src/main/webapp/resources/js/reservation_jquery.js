@@ -7,12 +7,12 @@ $(document).ready(function(){
 	   // 모달 열기 버튼에 대한 클릭 이벤트 핸들러
 	  $("#cancelReserv").click(function() {
 	 	
-	 	if($("#clickVal_sdate").val() != ""){
+	 	if($("#clickVal_depPlandTime").val() != ""){
 	 		
 		    $(".modal").css("display", "block");
 		    
 		    //main의 선택한 값이 들어있는 input태그의 값 불러와서 넣기
-		    $("#modal_date").text( $("#clickVal_sdate").val());
+		    $("#modal_date").text( $("#clickVal_depPlandTime").val());
 		    $("#modal_sstation").text( $("#clickVal_sstation").val());
 		    $("#modal_dstation").text( $("#clickVal_dstation").val());
 		    $("#modal_runtime").text( $("#clickVal_runtime").val());
@@ -112,9 +112,9 @@ $(document).ready(function(){
 	 *******************************/
 	
 	$(".box_detail_info").click(function() {
-            // 클릭한 요소의 데이터 가져오기 " 한칸 띄어쓰기 꼭하기 #id #sdate 로 > 효과 주기위함"
+            // 클릭한 요소의 데이터 가져오기 " 한칸 띄어쓰기 꼭하기 #id #depPlandTime 로 > 효과 주기위함"
             var id=$(this).attr("id");
-            var sdate = $("#"+id+" #sdate").text();
+            var depPlandTime = $("#"+id+" #depPlandTime").text();
             var stime = $("#"+id+" #stime").text();
             var price = $("#"+id+" #price").text();
             var sstation = $("#"+id+" #sstation").text();
@@ -125,7 +125,7 @@ $(document).ready(function(){
             var charnum = $("#"+id+" #charnum").text();
 
             // clickedValue에 데이터 설정
-            $("#clickVal_sdate").val(sdate);
+            $("#clickVal_depPlandTime").val(depPlandTime);
             $("#clickVal_stime").val(stime);
             $("#clickVal_price").val(price);
             $("#clickVal_sstation").val(sstation);
@@ -181,7 +181,7 @@ $(document).ready(function(){
 	        var url = "reservation_update.do?reservnum=" + reservnum;
 	        window.location.href = url;
 	        
-	        var sdate = $("#"+id+" #sdate").text();
+	        var depPlandTime = $("#"+id+" #depPlandTime").text();
             var sstation = $("#"+id+" #stime").text();
             var dstation = $("#"+id+" #stime").text();
 	        

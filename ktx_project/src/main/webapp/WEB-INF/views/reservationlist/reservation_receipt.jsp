@@ -50,7 +50,7 @@
 			</div>
 			<div class="box_row">
 				<ul>
-					<li>출발일 : ${ovo.sdate}</li>
+					<li>출발일 : ${ovo.depPlandTime}</li>
 					<li>출발지 : ${ovo.sstation}</li>
 					<li>도착지 : ${ovo.dstation}</li>
 					<li>출발시간 : ${ovo.stime}</li>

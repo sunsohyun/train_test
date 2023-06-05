@@ -120,7 +120,7 @@
 				<c:if test="${ovo.cancel == 0}">                 	 
 				<div class="box_detail_info" id="${ovo.reservnum}">
 					<div class="routeHead">
-						<p class="date" id="sdate">${ovo.sdate}</p>
+						<p class="date" id="depPlandTime">${ovo.depPlandTime}</p>
 						<p class="stime" id="stime">${ovo.stime}출발</p>
 						<p class="ticketPrice">총 결제금액
 							<span class="price" id="price">${ovo.price}원</span>
@@ -186,7 +186,7 @@
 				</c:if>
 				</c:forEach>
 					<div id="inputContainer">
-						<input type="hidden" id="clickVal_sdate" name="clickVal_sdate" />
+						<input type="hidden" id="clickVal_depPlandTime" name="clickVal_depPlandTime" />
 						<input type="hidden" id="clickVal_stime" name="clickVal_stime" />
 						<input type="hidden" id="clickVal_price" name="clickVal_price" />
 						<input type="hidden" id="clickVal_sstation" name="clickVal_sstation" />
@@ -222,7 +222,7 @@
 				<c:if test="${ovo.cancel == 1}">
 				<div class="box_detail_info">
 					<div class="routeHead">
-						<p class="date txt_black">${ovo.sdate}&nbsp;${ovo.stime}출발</p>
+						<p class="date txt_black">${ovo.depPlandTime}&nbsp;${ovo.stime}출발</p>
 						<p class="ticketPrice cancel">취소일시 
 							<span class="txt_cancelDate">2023. 05. 01(월)15:00</span>
 						</p>

@@ -2,33 +2,20 @@ package com.test.korail.vo;
 
 public class OrderVo {
 
-	String sstation, sdate, stime, runtime, dstation, reservnum, charnum, id, mid;
-	public String getMid() {
-		return mid;
-	}
-	public void setMid(String mid) {
-		this.mid = mid;
-	}
+	String sstation, rdate, stime, runtime, dstation, reservnum, charnum, mid, depPlaceId, arrPlaceId, depPlandTime;
 	int price, trainnum, qty, cancel;
 	
-	
-	public int getCancel() {
-		return cancel;
-	}
-	public void setCancel(int cancel) {
-		this.cancel = cancel;
-	}
 	public String getSstation() {
 		return sstation;
 	}
 	public void setSstation(String sstation) {
 		this.sstation = sstation;
 	}
-	public String getSdate() {
-		return sdate;
+	public String getRdate() {
+		return rdate;
 	}
-	public void setSdate(String sdate) {
-		this.sdate = sdate;
+	public void setRdate(String rdate) {
+		this.rdate = rdate;
 	}
 	public String getStime() {
 		return stime;
@@ -41,12 +28,6 @@ public class OrderVo {
 	}
 	public void setRuntime(String runtime) {
 		this.runtime = runtime;
-	}
-	public String getId() {
-		return id;
-	}
-	public void setId(String id) {
-		this.id = id;
 	}
 	public String getDstation() {
 		return dstation;
@@ -66,6 +47,30 @@ public class OrderVo {
 	public void setCharnum(String charnum) {
 		this.charnum = charnum;
 	}
+	public String getMid() {
+		return mid;
+	}
+	public void setMid(String mid) {
+		this.mid = mid;
+	}
+	public String getDepPlaceId() {
+		return depPlaceId;
+	}
+	public void setDepPlaceId(String depPlaceId) {
+		this.depPlaceId = depPlaceId;
+	}
+	public String getArrPlaceId() {
+		return arrPlaceId;
+	}
+	public void setArrPlaceId(String arrPlaceId) {
+		this.arrPlaceId = arrPlaceId;
+	}
+	public String getDepPlandTime() {
+		return depPlandTime;
+	}
+	public void setDepPlandTime(String depPlandTime) {
+		this.depPlandTime = depPlandTime;
+	}
 	public int getPrice() {
 		return price;
 	}
@@ -84,6 +89,15 @@ public class OrderVo {
 	public void setQty(int qty) {
 		this.qty = qty;
 	}
+	public int getCancel() {
+		return cancel;
+	}
+	public void setCancel(int cancel) {
+		this.cancel = cancel;
+	}
+
+	
+	
 	
 	
 }

@@ -108,7 +108,7 @@
 			<form name="mrschangefrm" id="mrschangefrm" method="post" action="/mrs/mrschantimestep1.do">
 				<div class="routeBody clfix">
 					<div class="routeArea route_wrap">
-						<p id="updatedate" class="date">${ovo.sdate}</p>
+						<p id="updatedate" class="date">${ovo.depPlandTime}</p>
 						<p id="updatetime" class="time">${ovo.stime}</p>
 						<div class="inner" id="updateinner">
 							<span class="roundBox departure">${ovo.sstation}</span>
@@ -159,7 +159,7 @@
 			</form>
 		</div>
 		<p class="btns col1">
-			<input type="text" id="update_sdate">
+			<input type="text" id="update_depPlandTime">
 			<input type="text" id="update_sstation">
 			<input type="text" id="update_dstation">
 			<a href="http://localhost:9000/korail/reservation_updatetable.do" class="btnL btn_confirm" id="reserv_search">조회하기</a>
